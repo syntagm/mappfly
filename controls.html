@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+    <head>
+		
+	<title>jQuery jLocator Plugin - Controls</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- font awesome -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+		
+		<!-- css -->
+        <link rel="stylesheet" href="../html/css/vendor/normalize.css" />
+		<link rel="stylesheet" href="../html/css/styles.min.css" />
+        <link href="../html/img/common/favicon.png" rel="shortcut icon" />
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="../html/css/styles.ie7.css" />
+		<![endif]-->
+				
+		
+		<!-- js -->		
+        <script src="../html/js/vendor/jquery-1.10.0.min.js"></script>	
+		<!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.2.js"></script-->
+		<script src="../html/js/vendor/modernizr.min.js"></script>
+		
+		
+		<!-- google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-36006444-4', 'no81no.com');
+		  ga('send', 'pageview');
+
+		</script>
+    </head>
+    <body>
+	
+		<!-- black top bar -->
+		<div class="box" id="black-top-bar">
+			<div class="center">			
+                <div class="box">
+					<ul class="hmenu right" id="social-menu">
+						<li>
+							<a href="https://www.facebook.com/miriam.zusin" title=""><i class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/105939222257494574786/posts" title=""><i class="fa fa-google-plus"></i></a>
+						</li>						
+						<li>
+							<a href="https://github.com/no81no" title=""><i class="fa fa-github"></i></a>
+						</li>
+						<li>
+							<a href="http://www.linkedin.com/pub/miriam-zusin/2b/65b/933" title=""><i class="fa fa-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+				
+		<!-- header -->
+		<header class="box" id="header">
+			<div class="box" id="header-box">
+				<div class="center">			
+					<div class="box">
+
+						<!-- logo -->
+						<div id="logo" class="left">							
+							<a href="http://no81no.com" title="">
+								<img src="../html/img/common/logo.png" alt="" title="" class="align-middle" />
+							</a>
+						</div>	
+						
+						<!-- main navigation -->
+						<ul class="default-menu hmenu right" id="top-menu">						
+							<li><a title="" href="http://no81no.com"><i class="fa fa-reply-all"></i> All Projects</a></li>
+							<li><a title="" href="http://codecanyon.net/user/no81no/portfolio"><i class="fa fa-asterisk"></i> CodeCanyon</a></li>
+							<li><a title="" href="mailto:no81no@gmail.com"><i class="fa fa-envelope"></i> Contacts</a></li>	
+							<li><a title="" href="mailto:no81no@gmail.com" class="orange"><i class="fa fa-coffee"></i> Freelance</a></li>	
+						</ul>
+
+					</div>
+				</div>					
+			</div>
+		</header>
+		
+		<!-- bread crumbs-->
+		<div id="bread-crumbs-box" class="box">
+			<div id="bread-crumbs" class="box">
+			
+				<div class="center">
+					<div class="box text-shadow">
+						<p>
+							<a href="http://no81no.com" title="">All Projects</a> &raquo; jQuery jLocator Plugin
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- main content -->
+		<div id="main-content" class="box">
+			<div class="center">
+				<div id="page-content" class="box">
+
+					<!-- tabs navigation -->
+					<ul class="default-menu hmenu left box">	
+							
+						<li>
+							<a title="" href="../start-here.html"><i class="fa fa-home"></i> Overview</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/demo.html"><i class="fa fa-picture-o"></i> Demo</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/usage.html"><i class="fa fa-wrench"></i> Usage</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/js-settings.html"><i class="fa fa-cog"></i> JS Settings</a>
+						</li>
+							
+						<li class="active">
+							<a title="" href="../html/controls.html"><i class="fa fa-th"></i> Controls</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/source-code.html"><i class="fa fa-list-ol"></i> Source Code</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/changelog.html"><i class="fa fa-clock-o"></i> Changelog</a>
+						</li>
+							
+						<li>
+							<a title="" href="../html/api.html"><i class="fa fa-book"></i> API</a>
+						</li>
+							<li>
+								<a title="" href="http://codecanyon.net/item/jquery-store-locator/3272278" class="orange"><i class="fa fa-shopping-cart"></i> Buy</a>
+							</li>
+					</ul>
+	
+					
+										
+					<div class="box text-shadow">
+						<h1 class="h1-30-normal left">Controls</h1>
+					</div>
+					
+					<div class="box text-shadow">
+						
+						<!-- settings -->
+						<table class="settings-tbl">
+						
+							<thead>
+								<tr>
+									<th>Data Attribute</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							
+							<tbody>
+								<tr>
+									<td class="desc">data-type="panel"</td>
+									<td class="desc">Panel section definition</tr>
+								
+								<tr>
+									<td class="desc">data-type="controls"</td>
+									<td class="desc">Controls section definition</td>
+								</tr>
+								
+								<tr>
+									<td class="desc">data-type="stores"</td>
+									<td class="desc">Stores list section definition</td>
+								</tr>
+								
+								<tr>
+									<td class="desc">data-type="store"</td>
+									<td class="desc">One store definition</td>
+								</tr>
+								
+								<tr>
+									<td class="desc">data-type="no-results"</td>
+									<td class="desc">'No results' section</td>
+								</tr>
+								
+								<tr>
+									<td class="desc">data-type="map"</td>
+									<td class="desc">Map section definition</td>
+								</tr>
+								
+							</tbody>	
+							
+						</table>
+					</div>	
+					
+					<div class="box text-shadow">
+						
+						<h2 class="p-lr-20">Map Controls</h2>
+						
+						<ul class="arrows-menu">
+							<li><a href="controls/autocomplete.html" title="">Google autocomplete control</a></li>
+							<li><a href="controls/autocomplete-radius.html" title="">Google autocomplete control with radius dropdown</a></li>
+                        </ul>
+						
+						<h2 class="p-lr-20">Sort Controls</h2>
+						
+						<ul class="arrows-menu">
+							<li><a href="controls/sort-dropdown.html" title="">Sort dropdown control (UL/LI)</a> - sort dropdown with UL/LI layout</li>
+							<li><a href="controls/sort-dropdown-select.html" title="">Sort dropdown control (Select)</a> - sort dropdown with SELECT layout</li>
+							<li><a href="controls/default-sort.html" title="">Default sort control</a> - hidden static sort control</li>
+                        </ul>
+
+                         <h2 class="p-lr-20">Pagination Controls</h2>
+						 <ul class="arrows-menu">
+							<li><a href="controls/items-per-page-dropdown.html" title="">Items per page dropdown control (UL/LI)</a> - "items on page" dropdown with UL/LI layout</li>
+							<li><a href="controls/items-per-page-dropdown-select.html" title="">Items per page dropdown control (Select)</a> - "items on page" dropdown with SELECT layout</li>
+							<li><a href="controls/placeholder.html" title="">Pagination control (placeholder)</a> - pagination buttons</li>
+							<li><a href="controls/label.html" title="">Pagination results control (label)</a> - pages number indication label</li>
+                         </ul>
+
+                         <h2 class="p-lr-20">Filter Controls</h2>
+						 <ul class="arrows-menu">
+							<li><a href="controls/filter-dropdown.html" title="">Filter dropdown control (UL/LI)</a> - filter by jQuery path dropdown with UL/LI layout</li>
+							<li><a href="controls/filter-dropdown-select.html" title="">Filter dropdown control (Select)</a> - filter by jQuery path dropdown with SELECT layout</li>
+							<li><a href="controls/text-filter.html" title="">Text filter control</a> - free text filter with INPUT layout</li>
+						 </ul>
+
+                         <h2 class="p-lr-20">Toggle Filter Controls</h2>
+                         <ul class="arrows-menu">
+                            <li><a href="controls/cb-group-filters.html" title="">Checkbox group filter control</a> - filter by jQuery path using group of checkboxes (OR logic inside group, AND logic between different groups)</li>
+                            <li><a href="controls/checkbox-text-filter.html" title="">Checkbox text filter control</a> - filter by checkboxes text values (OR logic inside group, AND logic between different groups)</li>
+							<li><a href="controls/checkbox-filters-or-logic.html" title="">Checkbox filter OR logic (deprecated)</a></li>
+							<li><a href="controls/checkbox-filters-and-logic.html" title="">Checkbox filter AND logic (deprecated)</a></li>
+							<li><a href="controls/radio-buttons-filter.html" title="">Radio buttons filter control</a> - filter by jQuery path with radio button</li>
+							<li><a href="controls/button-filters.html" title="">Button filter control</a> - filter by jQuery path with any element (SPAN, INPUT, etc.)</li>
+                            <li><a href="controls/button-filters-group.html" title="">Button filter group control</a> - filter by jQuery path using group of elements like SPAN, INPUT, etc. (OR logic inside group, AND logic between different groups)</li>
+							<li><a href="controls/button-text-filter.html" title="">Button text filter control</a> - filter by text using any elements like SPAN, INPUT etc. (OR logic inside group, AND logic between different groups)</li>
+							<li><a href="controls/button-text-filter-group.html" title="">Button text filter group control</a> - filter by text using any elements like SPAN, INPUT etc.</li>
+                            <li><a href="controls/range-filter.html" title="">Range filter control</a> - range filter by jQuery path  with any element (SPAN, INPUT, etc.)
+</li>
+                         </ul>
+
+                         <h2 class="p-lr-20">jQuery UI Controls</h2>
+						 <ul class="arrows-menu">
+							<li><a href="controls/date-picker-range-filter.html" title="">Date picker range filter control (jQuery UI)</a> - jQuery UI date picker</li>
+							<li><a href="controls/range-slider.html" title="">Range slider control (jQuery UI)</a> - jQuery UI range slider</li>
+						</ul>
+
+                        <h2 class="p-lr-20">Other Controls</h2>
+                        <ul class="arrows-menu">
+							<li><a href="controls/reset-button.html" title="">Reset button control</a> - control that resets the page  to its initial state</li>
+                            <li><a href="controls/counter.html" title="">Counter control</a> - counts and prints items number in the given jQuery path, by free text or by the given range</li>
+							<li><a href="controls/list-grid-view.html" title="">List/Grid view control</a> - control that switches between list view and grid view themes</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+		<!-- footer -->
+		<footer class="box" id="footer">
+			<div class="center">			
+                <div class="box">
+				
+					<p class="align-center" id="footer-content">
+						Copyright &copy;  2014 <a href="mailto:no81no@gmail.com" title="">Miriam Zusin.</a>
+					</p>
+					
+				</div>
+			</div>
+		</footer>	
+    </body>
+</html>

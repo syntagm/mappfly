@@ -1,0 +1,800 @@
+<!doctype html>
+<html>
+    <head>
+		
+	<title>MappFly</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<!-- font awesome -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+		
+		<!-- css -->
+        <link rel="stylesheet" href="css/vendor/normalize.css" />
+		<link rel="stylesheet" href="css/styles.min.css" />
+        <link href="img/common/favicon.png" rel="shortcut icon" />
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="css/styles.ie7.css" />
+		<![endif]-->
+		
+		<link href="css/jlocator.min.css" rel="stylesheet" type="text/css" />		
+		
+		<!-- js -->		
+        <script src="js/vendor/jquery-1.10.0.min.js"></script>	
+		<!--script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.2.js"></script-->
+		<script src="js/vendor/modernizr.min.js"></script>
+		
+		
+		<link rel="stylesheet" href="css/vendor/jquery-ui.css" /><style type="text/css">
+		</style>						
+		<script src="js/vendor/jquery-ui.js"></script>
+			
+		<!-- jplist -->
+		<script src="js/jplist.min.js"></script>	
+		
+		<!-- for IE 7: json support and ie 7 style -->
+		<!--[if lt IE 8]>
+		<script src="js/json2.min.js"></script>
+		<![endif]-->
+		
+		<!-- jlocator -->		
+		<script src="http://maps.google.com/maps/api/js?sensor=false&amp;libraries=places,geometry"></script>
+		<script src="js/jlocator.min.js"></script>			
+		
+			
+			<script>
+			$('document').ready(function(){
+				$('#jlocator').jlocator();
+			});
+			</script>
+		
+		<!-- google analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-36913555-1', 'SYNapps');
+		  ga('send', 'pageview');
+
+		</script>
+		<link type='text/css' rel='stylesheet' href='assets/app.min.css' />
+
+<!-- EXTERNAL JAVASCRIPT 
+<script type='text/javascript' src='assets/app.min.js'></script>-->
+    </head>
+    <body>
+<div class="box" id="black-top-bar">
+			<div class="center">			
+                <div class="box">
+					<ul class="hmenu right" id="social-menu">
+						<li>
+							
+							<a href="index.html" title="Home">Home</a>
+						</li>
+						<li>
+							<a href="http://google.com/+Syntagmresearchcc" title=""><i class="fa fa-google-plus"></i></a>
+						</li>						
+						<li>
+							<a href="https://github.com/syntagm" title=""><i class="fa fa-github"></i></a>
+						</li>
+						<li>
+							<a href="http://www.twitter.com/syntagm" title=""><i class="fa fa-twitter"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- main content -->
+		  <div id="main-content" class="box">
+				<!-- main table data to be added -->
+				<div id='sheet-3' style='padding: 1em 1.4em;'>
+                    <table width= '536' cellspacing='0' cellpadding='0' style='border-spacing:0;' onkeydown='javascript:navigate(event);'>
+					<col width='64'/>
+					<col width='128'/>
+					<col width='79'/>
+					<col width='77'/>
+					<col width='31'/>
+					<col width='31'/>
+					<col width='31'/>
+					<col width='31'/>
+					<col width='64'/>
+                    <tr style='height:35pt'>
+						<td class='ee100' style='height:35pt;'>
+							Nr
+						</td>
+						<td class='ee100' style='height:35pt;'>
+							TrapName
+						</td>
+						<td class='ee100' style='height:35pt;'>
+							Lat
+						</td>
+						<td class='ee100' style='height:35pt;'>
+							Long
+						</td>
+						<td class='ee103' style='height:35pt;'>
+							30-Oct
+						</td>
+						<td class='ee103' style='height:35pt;'>
+							06-Nov
+						</td>
+						<td class='ee103' style='height:35pt;'>
+							13-Nov
+						</td>
+						<td class='ee103' style='height:35pt;'>
+							20-Nov
+						</td>
+						<td class='ee106' style='height:35pt;'>&nbsp;</td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							1
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							African Pride
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.91403
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.4288
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							2
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Sapphire
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.9133
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.42773
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							1
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							3
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Nuweland
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.91288
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.42877
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							3
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							4
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Nuwe S and L
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.91273
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.43004
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							5
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Hange
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.91247
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.42759
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							1
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							1
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							6
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							S and L
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.91355
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.43097
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							7
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Kakamas
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.91236
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.43154
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							8
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Kareebos
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.91347
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.43283
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							9
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Sandvliet
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.91312
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.43354
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							10
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Jong Keisie
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.9146
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.43577
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							11
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Ou Keisie
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.91369
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.43794
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							12
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Imperial
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.91661
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.43063
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							2
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							13
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Skool Onder
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.91821
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.43015
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							14
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Skool Middel
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.91854
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.43074
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							15
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							WW Keisie
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.92336
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.43194
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							16
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Fantasy
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.92219
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.43115
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							17
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Supreme
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.93066
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.43647
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							18
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Cascade
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.93131
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.43554
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							19
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Bulida
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.90584
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.40483
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							20
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Malherbe
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.90537
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.4032
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							2
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							21
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Southern Bell 01
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.90574
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.40338
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							1
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							1
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'>
+							22
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							Colombard
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							-33.90693
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							20.40362
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee116' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee118' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee109' style='height:13pt;'>
+							23
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							Southern Bell 02
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							-33.90682
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							20.40512
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee109' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee111' style='height:13pt;'>
+							0
+						</td>
+						<td class='ee114' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                    <tr style='height:13pt'>
+						<td class='ee116' style='height:13pt;'><div style='overflow:hidden'></div></td>
+						<td class='ee116' style='height:13pt;'><div style='overflow:hidden'></div></td>
+						<td class='ee116' style='height:13pt;'><div style='overflow:hidden'></div></td>
+						<td class='ee116' style='height:13pt;'><div style='overflow:hidden'></div></td>
+						<td class='ee116' style='height:13pt;'><div style='overflow:hidden'></div></td>
+						<td class='ee116' style='height:13pt;'><div style='overflow:hidden'></div></td>
+						<td class='ee116' style='height:13pt;'><div style='overflow:hidden'></div></td>
+						<td class='ee118' style='height:13pt;'><div style='overflow:hidden'></div></td>
+						<td class='ee120' style='height:13pt;'><div style='overflow:hidden'></div></td>
+                    </tr>
+                </table>
+				<!-- Main table data to be added -->				
+                         
+                </div>
+            </div>
+			<input type="hidden" id="xl_target2" name="xl_target2" value="RU61kLrphHsvAcIhCO73D4ctIIBVlwyIJNwt0B8xpcoYELNQwt8JEWhJGTiUBk2FB9lEylmtx9d5D0xj3KvL6f8h+rMbzA/v45GR6pINnWKXZvMXfiiYCYSAvjsgikD37e2Jbdvka1a3E/2ruJFtHc1lUXxke6dBnyNrqzc4CTs="><input type="hidden" id="xl_templateimages" name="xl_templateimages" value="1"><input type="hidden" id="xl_aux2" name="xl_aux2" value="UEsDBC0AAAAIAG5/bkVf2PgS//////////8jABQATWFwRmx5IGJhc2VfdGVtcGxhdGVcRmlsbGVkU3Rhci5naWYBABAAhQMAAAAAAAD3AQAAAAAAAK1TO2uUARBcNYWKjwiWNmm0MY1rEbXRRgkWKS0sgo9sLWgnklNBsLLewh8QEOyiEAgXiITgCkEleIWihQQknULwxTizv8GF47u93Z2dmf3u0vTFqTPXDtoB2zHFoD+Dfgz6G2M4HII/wNA
+P9Dd08v/CzcIszUqbmLmbh3malzlUDLcIi7QoC6g33TIs07IsodFyq7BKq7ISU4MbwpCGIm0BC5pYHGY3tEcR7ule7tBaZhEe6VEeEAsWMzzTszwhUuyt8Eqv8gI5ctQRjnSUA6IsDSRNlqQFKdAmQhOLw5Ag5YyMqAhIH9cyy4ysSEguWbBYGVVRoHqSYm8gAxWAzJBZnKYd1A95I0kEI2myhKzSYmITmliQcyozZ1QmZCT1cS2zqizQV8olCx
+YTlYBs1lVCvTIacl3ehUZlB3QEKQwhiTR0E/EIAQsaOpG6Q3sU4MVoJPVxLbPqlwx9fvSB0SdEHwl9BrTRaCvRZqHtQAtGS0KTRtNCL0ZDo4fRZeYTP8d2mY3bSb2P+k/Y3uuGfUdfPvs0fLhnYXT10eEvK3d3/kzfnro1Wr5X45tLV55/fvXg9a/J32vbH0/P737x9/vWzGh1fv/k5tKHI19X5ja+vTn2eGP2wtOzCxNj69tbl++/v7N8c/HJi
+bdz7w6dunH8x+x5O/cPUEsDBC0AAAAIAG5/bkWX5ZY6//////////8pABQATWFwRmx5IGJhc2VfdGVtcGxhdGVcTWFwRmx5IGJhc2UudGVtcGxhdGUBABAAp0sAAAAAAAAbBgAAAAAAAO2c3W7bNhSArxug78C5wAwUk0WK+vFvgMRx0K75W+2u2yUt0bZQSRQoOm5W9Ml2sUfaK4ySHTdbnU4B2VZJ5Fw4PuI5Oufw8NPRj/33n3/1fzg6H05+
+vxiBF5PTE3Dx5vDk5RA0DdN8i4emeTQ5Ar8VW+wWBBNOkiwUIUtIZJqjs+b+0z1Q4tVfiDgC7+MoybqXg8aSJ93MX9CYZEYc+pxlbCYMn8XdyzhqbMaxL41js1no083btcaqhMaK8eB6fDxoLIRIu6a5UWltVVpSxVyrmBaEtoksk8Vb57aKq9WqtcItxufm5LX5ejQ08kht2CidGEqCsmNPR5MDOUuTC2P0y5uXvw4aQ5YImghjcpXKJAzPzya
+js8mgIeh7YeZ+9IC/IDyjYvBmcmy0G8AsuatidyIUEd0/JelxdAWmJKN9cy0q6W4mriIKhPRt45KfZY19UN6D1jI0VmEwp/kMFpGCD1M5f5R3AUrfg4xFYQCeHcD8rydd9N/NOVsmQRc8Oy5e4IcwThkXJBG9j0/3ij3vAfM5GOe+ZSChNKABmF6BccrlTGQLSoXM6iXlgnLw3Nx73qIUQQg+3DAPpH0XDo+OrB4APosYl5JVmARslccphTPprj
+EjcSgz1wVDEoVTHgLwEwCZXEBGRnk4ux6WhX9QOQjBFoTpVnmdvC5IGI9JdC1d0XC+EFJsQxkwSEkQhMnciOgsF8qc3BDyzdB/SwVLt7LcWUP6Nk+kyJfppVxK89hDn0TbLXEYBNKXj2CdC/yYczFlQrB4mwtXKRcHPPwUTkVCz22UCLzzWeBHB6PRMX6ERYCQUi7ubxGgz0lwaI+80cFjLAJHKRf3sQj29vLhRB42ZeiAyXGziK26gCwF6+Wb8
+4NtyVbBLKIr21iYd2mapiy4ukvXE4SXoPBm0Fj3GsY64K7zqePAtuv4tLeNeSGPkDTpNe6wnzv78qm5ud59UVfdZ7PZrLeZzK4tfURQzuWN8uqui+tGuXSnLAqkt+O827H6ptyNRs/X9gDQaPGzOeneaP/84rVNQRF+Y78vyFSuF59GUZYSX24ZNGGz+LwZmX+WYT/JX32ZS7k+A7EYNF27ae6SI6u9e4PXuUXu7ZZjqEe+cXR37843CWsu1lOO
+nVRsw33SFwHwI5Jlg2bR3jZ3jO7lw8/4VsUUwd315QljekZiqmblhAhFAyyZl7GAb7WAoXHuCzUb0DXO2KWaDYTL2nBvsfFjMs3S3kZz9wIWvHRdIfyFuuo0d4xeh1EmgtvVD2ZcHpMScMHDgKqZMjBudZANsZoZC7Zsq91WMwIrr47QLeo3GN38z3FRbiwOCd+i5BC+fYbKhHe7+pik6SLkVM3KutowVrNSFJvnKVpBaurwG6g71a62LywmRZy
+cLVc0Ikmgg23KWFqzzfPuM9zww4abrbYY83IDYyALDpzoAJzlaSAchtCuPqIeLeEctQX5giRzLa2bZXsa8OY5HTUr6LviDT1svLmKvZs+smHH0UG2jleTrbJkU+TJK/KOxCTTwjbsqrMNI8euz0sry7a22lp8RTilU5ZpgZvtaYCb1cY13CoLN8U2ZyyPpJdRSIUOvGFkacAbrvFWYbwhxeX4M0vm4BUNs1DLpTfb1UA4x6vbt+oSDimeip0vy9
+fb/yPO7WhAnNepEVdhxCneWngZpzS/R6+Db66LdJyfuqrX72rAfUXAKd5cGL9jLALnSUC5DsS1LaQBcRA5NeKqizjFK/HrkjvNQ9KCubZj68CcV99gqDDmFIHw9q2+Ps7Ceq7E1X1clSGneG54TBJBsisNfLMs1NHAN4Scmm/V5ZvifYbxMuU01kE32e/roJtrezXdqks3xRsNQ5L5JNBxEQ4jrOMk1XHq7q3CdFO87nW4jMKAaIAbdNq2Otyg3
+cY13Kr7cK/iYjwl0YLyqQ66QQdruIsKsXWf4WY9bLipXvEas6WQ9ZaAQxpFACItmPN0YA7je/0dhgf+HJylCIUhi1g8JTzQwTm3g3VwzrXqLq66oMNaQWfpAJ3b1vDUCHRUnz2p+7mvBrry/tVma7PfC7zyLf+OefFf+a/Q9807/CJBv/gZp/1/AFBLAQItAC0AAAAIAG5/bkVf2PgS//////////8jABQAAAAAAAAAAAAAAAAAAABNYXBGbHkg
+YmFzZV90ZW1wbGF0ZVxGaWxsZWRTdGFyLmdpZgEAEACFAwAAAAAAAPcBAAAAAAAAUEsBAi0ALQAAAAgAbn9uRZflljr//////////ykAFAAAAAAAAAAAAAAATAIAAE1hcEZseSBiYXNlX3RlbXBsYXRlXE1hcEZseSBiYXNlLnRlbXBsYXRlAQAQAKdLAAAAAAAAGwYAAAAAAABQSwUGAAAAAAIAAgDQAAAAwggAAAAA"><input type="hidden" id="xl_md5" name="xl_md5" value="pLzIB6eMOAfBSPBT5DlNcg==">
+        </form>
+    </body>
+				<!-- main converter -->		
+			   
+		</div>
+		<!-- footer -->
+		<footer class="box" id="footer">
+			<div class="center">			
+                <div class="box">
+				
+					<p class="align-center" id="footer-content">
+					
+					Copyright &copy;  2014 <a href="mailto:syntagm@icon.co.za" title="">SYNapps</a>
+					</p>
+					<center><img src="img/72png.png" width="72" height="80" alt="synapps" longdesc="img/72png.png" /></center>
+					
+				</div>
+			</div>
+		</footer>	
+    </body>
+</html>
